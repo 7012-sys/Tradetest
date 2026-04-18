@@ -23,28 +23,35 @@ serve(async (req) => {
     const body = await req.text();
     const signature = req.headers.get("x-razorpay-signature");
 
-    // Verify webhook signature
-    if (signature) {
-      const encoder = new TextEncoder();
-      const key = await crypto.subtle.importKey(
-        "raw",
-        encoder.encode(RAZORPAY_KEY_SECRET),
-        { name: "HMAC", hash: "SHA-256" },
-        false,
-        ["sign"]
+    // Signature header is MANDATORY — reject any unsigned request
+    if (!signature) {
+      console.error("Webhook rejected: missing x-razorpay-signature header");
+      return new Response(
+        JSON.stringify({ success: false, error: "Missing signature" }),
+        { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
-      const signatureBuffer = await crypto.subtle.sign("HMAC", key, encoder.encode(body));
-      const expectedSignature = Array.from(new Uint8Array(signatureBuffer))
-        .map(b => b.toString(16).padStart(2, '0'))
-        .join('');
+    }
 
-      if (expectedSignature !== signature) {
-        console.error("Invalid webhook signature");
-        return new Response(
-          JSON.stringify({ success: false, error: "Invalid signature" }),
-          { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-        );
-      }
+    // Verify webhook signature (HMAC SHA-256)
+    const encoder = new TextEncoder();
+    const key = await crypto.subtle.importKey(
+      "raw",
+      encoder.encode(RAZORPAY_KEY_SECRET),
+      { name: "HMAC", hash: "SHA-256" },
+      false,
+      ["sign"]
+    );
+    const signatureBuffer = await crypto.subtle.sign("HMAC", key, encoder.encode(body));
+    const expectedSignature = Array.from(new Uint8Array(signatureBuffer))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
+
+    if (expectedSignature !== signature) {
+      console.error("Invalid webhook signature");
+      return new Response(
+        JSON.stringify({ success: false, error: "Invalid signature" }),
+        { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
     }
 
     const event = JSON.parse(body);
