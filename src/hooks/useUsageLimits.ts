@@ -3,7 +3,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 // FREE plan limits
 const FREE_BACKTEST_LIMIT = 30; // 30 backtests for free
-const FREE_STRATEGY_LIMIT = 2; // 2 manual strategies
+const FREE_STRATEGY_LIMIT = null; // unlimited manual strategies for all users
 const FREE_FILE_LIMIT = 0; // CSV upload disabled for free
 const FREE_AI_LIMIT = 0; // AI disabled for free
 const PRO_AI_DAILY_LIMIT = 30; // 30 AI strategies/day for Pro
