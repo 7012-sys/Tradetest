@@ -222,7 +222,7 @@ const Dashboard = () => {
         <MetricCard
           title="Strategies"
           value={strategiesCount}
-          subtitle={effectivePro ? `${strategiesCount} created` : `of ${strategyLimit} used`}
+          subtitle={`${strategiesCount} created`}
           icon={Layers}
           variant="default"
           loading={dataLoading}
@@ -264,12 +264,6 @@ const Dashboard = () => {
             <CardTitle className="text-sm font-medium text-muted-foreground">Usage Limits</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <UsageProgressBar
-              label="Strategies"
-              used={strategiesCount}
-              limit={strategyLimit}
-              icon={<Layers className="h-4 w-4 text-primary" />}
-            />
             <UsageProgressBar
               label="Backtests (Monthly)"
               used={monthlyBacktestsUsed}

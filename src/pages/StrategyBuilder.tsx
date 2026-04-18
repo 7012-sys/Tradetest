@@ -89,7 +89,7 @@ const StrategyBuilder = () => {
     if (entryRules.length === 0) { toast.error("Please add at least one entry rule"); return; }
     if (exitRules.length === 0) { toast.error("Please add at least one exit rule"); return; }
     if (!canCreateStrategy) {
-      toast.error("Strategy limit reached (2 for Free plan). Upgrade to Pro for unlimited strategies.");
+      toast.error("Unable to create strategy right now. Please try again.");
       return;
     }
 
@@ -120,7 +120,7 @@ const StrategyBuilder = () => {
     if (!name.trim()) { toast.error("Please enter a strategy name"); return; }
     if (entryRules.length === 0 || exitRules.length === 0) { toast.error("Please add entry and exit rules first"); return; }
     if (!canCreateStrategy) {
-      toast.error("Strategy limit reached (2 for Free plan). Upgrade to Pro for unlimited strategies.");
+      toast.error("Unable to create strategy right now. Please try again.");
       return;
     }
 
