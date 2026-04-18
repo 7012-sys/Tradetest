@@ -214,8 +214,8 @@ export const useUsageLimits = (userId: string | undefined): UsageLimits => {
     
     // Strategy limits
     strategiesCount,
-    strategyLimit: effectivePro ? null : FREE_STRATEGY_LIMIT,
-    canCreateStrategy: effectivePro || strategiesCount < FREE_STRATEGY_LIMIT,
+    strategyLimit: null,
+    canCreateStrategy: true,
     
     // File limits
     uploadedFilesCount,
