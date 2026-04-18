@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "How does pricing work?",
     answer:
-      "TradeTest offers a Free plan (₹0 forever) with 2 strategies and 30 backtests per month on NIFTY50 daily data. The Pro plan is ₹499/month (50% off from ₹999) and unlocks unlimited strategies, unlimited backtests, AI strategy generation, CSV upload, all timeframes, walk-forward validation, learning mode, and PDF/Excel export.",
+      "TradeTest offers a Free plan (₹0 forever) with unlimited strategies and 30 backtests per month on NIFTY50 daily data. The Pro plan is ₹499/month (50% off from ₹999) and unlocks unlimited backtests, AI strategy generation, CSV upload, all timeframes, walk-forward validation, learning mode, and PDF/Excel export.",
   },
   {
     question: "What is your refund policy?",
