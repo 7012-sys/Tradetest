@@ -78,7 +78,7 @@ const Strategies = () => {
   return (
     <AppLayout loading={loading} showBack backTo="/dashboard" title="All Strategies" subtitle={`${strategies.length} strategies`} onSignOut={handleSignOut}>
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-lg font-semibold text-foreground">Your Strategies {!isPro && <span className="text-xs text-muted-foreground font-normal">({strategies.length}/2)</span>}</h2>
+        <h2 className="text-lg font-semibold text-foreground">Your Strategies</h2>
         <Button onClick={() => {
           if (!canCreateStrategy) { setShowLimitModal(true); return; }
           navigate("/strategy-builder");
