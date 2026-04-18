@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2, XCircle, ArrowRight, Crown } from "lucide-react";
 
 const freeFeatures = [
-  { text: "2 Manual Strategies", included: true },
+  { text: "Unlimited Manual Strategies", included: true },
   { text: "NIFTY50 Market Data", included: true },
   { text: "30 Backtests per Month", included: true },
   { text: "All 15+ Technical Indicators", included: true },

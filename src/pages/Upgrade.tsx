@@ -517,7 +517,7 @@ const Upgrade = () => {
                     What happens when my free limits are reached?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    When you reach your monthly backtest limit (30 per month) or strategy limit (2 strategies), you'll see a prompt to upgrade to Pro. Your backtest count resets at the start of each new month.
+                    When you reach your monthly backtest limit (30 per month), you'll see a prompt to upgrade to Pro. Your backtest count resets at the start of each new month.
                   </AccordionContent>
                 </AccordionItem>
 

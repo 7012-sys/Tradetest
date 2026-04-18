@@ -175,7 +175,7 @@ const Demo = () => {
 
               <div className="flex items-start gap-2 text-sm text-muted-foreground bg-accent/5 p-3 rounded-lg border border-accent/10">
                 <Sparkles className="h-4 w-4 text-accent mt-0.5 shrink-0" />
-                <span>AI Strategy is a <strong>Pro</strong> feature. Free users can create up to 2 manual strategies.</span>
+                <span>AI Strategy is a <strong>Pro</strong> feature. Free users can create unlimited manual strategies.</span>
               </div>
             </CardContent>
           </Card>
