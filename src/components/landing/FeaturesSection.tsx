@@ -27,7 +27,7 @@ const features = [
     icon: Sparkles,
     title: "AI Strategy Builder",
     description:
-      "Describe your trading idea in plain English and let AI create a complete, testable strategy. Pro feature.",
+      "Describe your trading idea in plain English and let AI generate a complete, testable strategy in seconds. Pro feature.",
     color: "text-accent",
     bgColor: "bg-accent/10",
   },
@@ -35,7 +35,7 @@ const features = [
     icon: Shield,
     title: "20+ Indian Stocks",
     description:
-      "NIFTY50, RELIANCE, HDFCBANK, TCS, TATAMOTORS, ADANIENT, POWERGRID & more. Pro users can also upload custom CSV data.",
+      "Test on NIFTY50, RELIANCE, HDFCBANK, TCS, TATAMOTORS, ADANIENT, POWERGRID & more. Pro users can also upload custom CSV data.",
     color: "text-success",
     bgColor: "bg-success/10",
   },
@@ -51,7 +51,7 @@ const features = [
     icon: Users,
     title: "Community Strategy Hub",
     description:
-      "Share your strategies with the community. Browse, like, and apply top-performing strategies shared by other users.",
+      "Share your tested strategies with the community. Browse, like, and apply top-performing strategies shared by other users.",
     color: "text-accent",
     bgColor: "bg-accent/10",
   },
@@ -59,7 +59,7 @@ const features = [
     icon: ThumbsUp,
     title: "Like & Upvote System",
     description:
-      "Vote on community strategies to surface the best ones. One vote per user per strategy ensures fair ranking.",
+      "Vote on community strategies to surface the best performers. One vote per user per strategy ensures fair ranking.",
     color: "text-success",
     bgColor: "bg-success/10",
   },
@@ -73,7 +73,7 @@ const features = [
   },
   {
     icon: FileText,
-    title: "Clear Results & Export",
+    title: "Detailed Reports & Export",
     description:
       "Summary metrics, equity curve, monthly returns, and full trade log. Export to PDF or Excel (Pro).",
     color: "text-accent",
@@ -83,7 +83,7 @@ const features = [
     icon: GitBranch,
     title: "Strategy Versioning",
     description:
-      "Every edit creates a version snapshot. Backtests are tied to versions — history is never overwritten.",
+      "Every edit creates a version snapshot. Backtests are tied to versions — your testing history is never overwritten.",
     color: "text-success",
     bgColor: "bg-success/10",
   },
@@ -155,13 +155,13 @@ export const FeaturesSection = () => {
             <span className="text-sm font-medium text-foreground">Powerful Features</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
-            Everything You Need to Learn
+            Everything You Need to Test
             <br />
-            <span className="text-gradient-accent">Strategy Analysis</span>
+            <span className="text-gradient-accent">Trading Strategies</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            An educational toolkit for studying how technical strategies behave on historical data.
-            No tips, no signals — just learning.
+            A professional toolkit to build, backtest, and validate strategies on historical market data —
+            for research and testing purposes only.
           </p>
         </div>
 
@@ -215,10 +215,10 @@ export const FeaturesSection = () => {
             <LineChart className="h-8 w-8 text-primary" />
             <div className="text-left">
               <div className="font-semibold font-heading text-foreground">
-                Ready to learn strategy analysis?
+                Ready to test your trading ideas?
               </div>
               <div className="text-sm text-muted-foreground">
-                Start with 30 free simulations per month — for educational use only
+                Start with 30 free backtests per month — for research and testing purposes only
               </div>
             </div>
           </div>

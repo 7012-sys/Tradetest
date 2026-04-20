@@ -30,12 +30,12 @@ const faqs = [
   {
     question: "Is TradeTest registered with SEBI?",
     answer:
-      "No. TradeTest is a research and educational tool only. We are not registered with SEBI as an investment advisor, broker, or portfolio manager. We do not provide buy/sell recommendations or financial advice of any kind.",
+      "No. TradeTest is a strategy backtesting and research tool only. We are not registered with SEBI as an investment advisor, broker, or portfolio manager. We do not provide buy/sell recommendations or financial advice of any kind.",
   },
   {
     question: "Can I use TradeTest for real money trading?",
     answer:
-      "TradeTest is strictly a backtesting and analysis platform. It does not connect to any broker, does not execute live trades, and does not manage any real money. Past backtest performance does not guarantee future results. Always consult a qualified financial advisor before making trading decisions.",
+      "TradeTest is strictly a backtesting and analysis platform. It does not connect to any broker, does not execute live trades, and does not manage any real money. It helps you validate ideas on historical data, but past backtest performance does not guarantee future results. Always consult a qualified financial advisor before making trading decisions.",
   },
   {
     question: "What types of strategies can I test?",
@@ -55,7 +55,7 @@ const faqs = [
   {
     question: "What analytics and metrics are available?",
     answer:
-      "Free users get key metrics (Win Rate, Net P&L, Total Trades, Max Drawdown, Sharpe Ratio, Profit Factor), equity curve, and confidence score. Pro users additionally unlock Sortino ratio, CAGR, Calmar ratio, Recovery Factor, Expectancy, monthly returns chart, trade-by-trade analysis with learning mode, and PDF/Excel export.",
+      "Free users get key metrics (Win Rate, Net P&L, Total Trades, Max Drawdown, Sharpe Ratio, Profit Factor), equity curve, and confidence score. Pro users additionally unlock Sortino ratio, CAGR, Calmar ratio, Recovery Factor, Expectancy, monthly returns chart, trade-by-trade analysis, and PDF/Excel export.",
   },
   {
     question: "Can I export my results?",

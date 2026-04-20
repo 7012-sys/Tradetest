@@ -3,33 +3,33 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Rahul Sharma",
-    role: "Finance Learner, Mumbai",
+    role: "Independent Trader, Mumbai",
     content:
-      "TradeTest helped me understand how moving average crossover strategies behave on historical data. The simulation results taught me so much about risk management concepts.",
+      "TradeTest lets me validate moving average crossover strategies on years of historical data in seconds. The detailed performance metrics help me filter out weak ideas before risking capital.",
     rating: 5,
     avatar: "RS",
   },
   {
     name: "Meera Joshi",
-    role: "Research Student, Pune",
+    role: "Quant Researcher, Pune",
     content:
-      "The analytics depth is impressive — Sharpe, Sortino, Calmar, drawdown analysis. I use it to study strategy performance metrics for my academic research papers.",
+      "The analytics depth is impressive — Sharpe, Sortino, Calmar, drawdown analysis. I use it to benchmark and refine systematic strategies before deploying them.",
     rating: 5,
     avatar: "MJ",
   },
   {
     name: "Arjun Nair",
-    role: "Finance Student, Delhi",
+    role: "Swing Trader, Delhi",
     content:
-      "As a student learning technical analysis, TradeTest is invaluable. The Learning Mode explains why each simulated trade triggered. It's like having a mentor built into the platform.",
+      "The AI Strategy Builder turns a one-line idea into a fully testable strategy. Pair that with walk-forward validation and I can stress-test ideas in minutes instead of days.",
     rating: 5,
     avatar: "AN",
   },
   {
     name: "Vikram Mehta",
-    role: "Quantitative Researcher, Bangalore",
+    role: "Quantitative Analyst, Bangalore",
     content:
-      "Finally, an educational platform that covers Indian market data. Walk-forward validation and strategy versioning help me study overfitting concepts thoroughly.",
+      "Finally, a serious backtesting platform built for Indian markets. Walk-forward validation and strategy versioning make it easy to catch overfitting before going live.",
     rating: 5,
     avatar: "VM",
   },
@@ -43,15 +43,15 @@ export const TestimonialsSection = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-success/10 border border-success/20 mb-6">
             <Star className="h-4 w-4 text-success fill-success" />
-            <span className="text-sm font-medium text-foreground">Trusted by Learners</span>
+            <span className="text-sm font-medium text-foreground">Trusted by Traders</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground mb-4">
-            What Our Learners
+            What Our Users
             <br />
             <span className="text-gradient-accent">Are Saying</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join thousands of students and researchers studying strategy analysis with TradeTest
+            Join thousands of traders and researchers backtesting strategies with TradeTest
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export const TestimonialsSection = () => {
                 </div>
               ))}
             </div>
-            <span className="text-sm">10,000+ active learners</span>
+            <span className="text-sm">10,000+ active users</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="flex gap-0.5">

@@ -47,17 +47,17 @@ const Index = () => {
         <section className="py-20 bg-muted border-t border-border">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold font-heading mb-4">
-              Ready to study strategy performance?
+              Ready to validate your trading strategies?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Join 10,000+ learners exploring historical strategy analysis.
+              Join 10,000+ traders backtesting strategies on historical market data.
             </p>
             <Button
               size="lg"
               onClick={() => navigate("/auth")}
               className="h-14 px-10 font-semibold bg-accent text-accent-foreground hover:bg-accent/90 glow-accent"
             >
-              Start Learning Free
+              Run Your First Backtest
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
