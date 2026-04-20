@@ -44,14 +44,14 @@ interface Subscription {
 }
 
 const proFeatures = [
-  { icon: Zap, title: "Unlimited Simulations", description: "Run as many historical simulations as you want, no monthly limits" },
+  { icon: Zap, title: "Unlimited Backtests", description: "Run as many backtests as you want, no monthly limits" },
   { icon: TrendingUp, title: "AI Strategy Generation", description: "Generate up to 30 strategies/day from plain English descriptions" },
   { icon: BarChart3, title: "20+ Indian Stocks", description: "HDFCBANK, TATAMOTORS, ADANIENT, POWERGRID & more built-in" },
-  { icon: Shield, title: "Custom CSV Upload (50MB)", description: "Upload your own historical data for educational analysis" },
+  { icon: Shield, title: "Custom CSV Upload (50MB)", description: "Upload your own historical data for custom backtests" },
   { icon: LineChart, title: "Walk-Forward Validation", description: "Detect overfitting with rolling train/test windows" },
   { icon: Sparkles, title: "Custom Indicator Parameters", description: "Tune SMA, RSI, MACD periods to any value you want" },
   { icon: Upload, title: "Community Strategy Sharing", description: "Share, browse, like & apply strategies from other users" },
-  { icon: Download, title: "PDF & Excel Export", description: "Export complete simulation reports and analysis logs" },
+  { icon: Download, title: "PDF & Excel Export", description: "Export complete backtest reports and trade logs" },
 ];
 
 interface ComparisonRowProps {
@@ -316,7 +316,7 @@ const Upgrade = () => {
                   )}
                 </Button>
                 <p className="text-xs text-muted-foreground mt-2">
-                  🔒 All payments are final. No refunds applicable. Educational tool only.
+                  🔒 All payments are final. No refunds applicable. For research and testing purposes only.
                 </p>
               </div>
             </div>
@@ -526,7 +526,7 @@ const Upgrade = () => {
                     Do you provide investment advice?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    No, Trade Strategy Backtester is an educational tool only. We are not SEBI registered and do not provide any investment advice. All backtests and AI strategies are for educational purposes to help you understand how strategies might have performed historically. Please see our <a href="/disclaimer" className="text-accent hover:underline">disclaimer</a> for more information.
+                    No, TradeTest is a strategy backtesting and research tool only. We are not SEBI registered and do not provide any investment advice. All backtests and AI-generated strategies are for research and testing purposes to help you validate ideas on historical data. Please see our <a href="/disclaimer" className="text-accent hover:underline">disclaimer</a> for more information.
                   </AccordionContent>
                 </AccordionItem>
 
