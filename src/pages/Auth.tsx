@@ -489,7 +489,7 @@ const Auth = () => {
       {/* Footer */}
       <footer className="py-4 text-center">
         <p className="text-xs text-muted-foreground">
-          ⚠️ Educational purpose only. Not investment advice.
+          ⚠️ For research and testing purposes only. Not investment advice.
         </p>
       </footer>
 

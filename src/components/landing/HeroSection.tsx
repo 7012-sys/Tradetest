@@ -5,10 +5,10 @@ import { Logo } from "@/components/Logo";
 import { ArrowRight, Play, BarChart3, Zap } from "lucide-react";
 
 const headlines = [
-  "Learn Before You Invest",
-  "AI-Powered Strategy Education",
-  "Study Historical Patterns",
-  "Data-Driven Learning",
+  "Build, Test, and Validate Strategies",
+  "AI-Powered Strategy Builder",
+  "Backtest on Historical Market Data",
+  "Analyze Performance with Confidence",
 ];
 
 export const HeroSection = () => {
@@ -37,7 +37,7 @@ export const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-8 animate-fade-in">
             <Zap className="h-4 w-4 text-accent" />
             <span className="text-sm font-medium text-foreground">
-              India's #1 Strategy Education Platform
+              India's #1 Strategy Backtesting Platform
             </span>
           </div>
 
@@ -55,9 +55,9 @@ export const HeroSection = () => {
             className="text-xl md:text-2xl text-foreground/70 mb-8 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            An <span className="text-accent font-semibold">educational platform</span> to study 
-            how trading strategies would have performed on historical{" "}
-            <span className="text-accent font-semibold">NSE</span> data
+            Create strategies using <span className="text-accent font-semibold">AI or manually</span>,
+            backtest them on historical <span className="text-accent font-semibold">NSE</span> data,
+            and analyze performance before going live.
           </p>
 
           {/* CTA */}
@@ -70,7 +70,7 @@ export const HeroSection = () => {
               onClick={() => navigate("/auth")}
               className="h-14 px-8 text-lg font-semibold bg-accent text-accent-foreground hover:bg-accent/90 shadow-accent-glow"
             >
-              Start Free
+              Start Testing Strategies
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button size="lg" variant="outline" onClick={() => navigate("/demo")} className="h-14 px-8 text-lg font-semibold border-2 border-border text-foreground hover:bg-muted">
@@ -86,7 +86,7 @@ export const HeroSection = () => {
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold font-heading text-foreground">15K+</div>
-              <div className="text-sm text-foreground/60">Simulations Run</div>
+              <div className="text-sm text-foreground/60">Backtests Run</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold font-heading text-foreground">50+</div>
@@ -127,11 +127,11 @@ export const HeroSection = () => {
                   </div>
                 ))}
               </div>
-              <p className="text-center text-xs text-foreground/40 mt-2">Sign in to explore your learning dashboard</p>
+              <p className="text-center text-xs text-foreground/40 mt-2">Sign in to access your strategy testing dashboard</p>
             </div>
           </div>
           <p className="text-center text-[10px] text-foreground/30 mt-3">
-            ⚠️ For educational purposes only. Not financial advice. Not SEBI registered. Past performance ≠ future results.
+            ⚠️ For research and testing purposes only. Not financial advice. Not SEBI registered. Past performance ≠ future results.
           </p>
         </div>
       </div>

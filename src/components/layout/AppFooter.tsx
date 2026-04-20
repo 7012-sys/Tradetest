@@ -7,7 +7,7 @@ export const AppFooter = () => {
       {/* Compliance Banner */}
       <div className="bg-warning/10 border-t border-warning/20 px-4 py-3">
         <p className="text-center text-sm text-muted-foreground">
-          ⚠️ <span className="font-medium">TradeTest is a research and educational tool.</span> Not registered with SEBI as advisory or broker. Not financial advice. Past performance does not guarantee future results.
+          ⚠️ <span className="font-medium">TradeTest is a strategy backtesting & research tool.</span> Not registered with SEBI as advisory or broker. Not financial advice. Past performance does not guarantee future results.
         </p>
       </div>
 

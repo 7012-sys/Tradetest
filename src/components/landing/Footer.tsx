@@ -14,8 +14,8 @@ export const Footer = () => {
               <Logo size="md" />
             </div>
             <p className="text-primary-foreground/70 text-sm max-w-sm mb-6">
-              India's #1 educational platform for studying how trading strategies 
-              perform on historical market data. For learning purposes only.
+              India's #1 platform for backtesting and validating trading strategies on historical
+              market data. For research and testing purposes only.
             </p>
             <div className="flex gap-4">
               <a href="https://www.instagram.com/tradetest_official/" target="_blank" rel="noopener noreferrer" className="h-9 w-9 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors">
@@ -67,10 +67,10 @@ export const Footer = () => {
       <div className="border-t border-primary-foreground/10 bg-primary-foreground/5">
         <div className="container mx-auto px-4 py-4">
           <p className="text-center text-xs text-primary-foreground/60 max-w-3xl mx-auto leading-relaxed">
-            ⚠️ <span className="font-medium">DISCLAIMER:</span> TradeTest is a <strong>research and educational tool</strong> designed for academic study of historical market data. 
-            We do NOT provide trading tips, investment advice, buy/sell recommendations, or guaranteed returns. 
-            We are NOT registered with SEBI as an investment advisor, research analyst, or broker. 
-            All simulations use hypothetical scenarios on past data. Past performance does not guarantee future results. 
+            ⚠️ <span className="font-medium">DISCLAIMER:</span> TradeTest is a <strong>strategy backtesting and research tool</strong> for testing trading ideas on historical market data.
+            We do NOT provide trading tips, investment advice, buy/sell recommendations, or guaranteed returns.
+            We are NOT registered with SEBI as an investment advisor, research analyst, or broker.
+            All backtests are hypothetical scenarios on past data. Past performance does not guarantee future results.
             Users are solely responsible for their own financial decisions. Consult a SEBI-registered advisor before making any investment.
           </p>
         </div>

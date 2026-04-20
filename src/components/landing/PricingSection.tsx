@@ -126,7 +126,7 @@ export const PricingSection = () => {
                 <span className="text-primary-foreground/70">/month</span>
               </div>
               <p className="text-sm mt-2 text-primary-foreground/80">
-                For serious learners & researchers
+                For serious traders & researchers
               </p>
             </div>
 
@@ -156,10 +156,10 @@ export const PricingSection = () => {
           </p>
           <div className="max-w-2xl mx-auto mt-4 p-4 rounded-lg bg-muted border border-border">
             <p className="text-xs text-muted-foreground leading-relaxed">
-              ⚠️ <strong>Educational Platform Disclaimer:</strong> TradeTest is strictly an educational and research tool for studying historical market data. 
-              We do NOT provide trading tips, investment advice, buy/sell signals, or portfolio recommendations. 
-              We are NOT registered with SEBI as an investment advisor, research analyst, or broker. 
-              Past performance shown in simulations does not guarantee future results. All content is for learning purposes only.
+              ⚠️ <strong>Disclaimer:</strong> TradeTest is a strategy backtesting and research platform for testing trading ideas on historical market data.
+              We do NOT provide trading tips, investment advice, buy/sell signals, or portfolio recommendations.
+              We are NOT registered with SEBI as an investment advisor, research analyst, or broker.
+              Past performance shown in backtests does not guarantee future results. For research and testing purposes only.
             </p>
           </div>
         </div>
